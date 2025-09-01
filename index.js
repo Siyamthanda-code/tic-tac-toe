@@ -107,38 +107,3 @@ function resetGame() {
   });
   running = true;
 }
-    const cellB = options[condition[1]];
-    const cellC = options[condition[2]];
-
-    if (cellA === '' || cellB === '' || cellC === '') continue;
-
-    if (cellA === cellB && cellB === cellC) {
-      roundWon = true;
-      condition.forEach(index => {
-        document.querySelector(`[cellIndex="${index}"]`).classList.add('winning-cell');
-      });
-      break;
-    }
-  }
-
-  if (roundWon) {
-    statusText.textContent = `${currentPlayer} wins!`;
-    running = false;
-  } else if (!options.includes('')) {
-    statusText.textContent = 'Draw!';
-    running = false;
-  } else {
-    changePlayer();
-  }
-}
-
-function resetGame() {
-  currentPlayer = 'X';
-  options = ['', '', '', '', '', '', '', '', ''];
-  statusText.textContent = `${currentPlayer}'s turn`;
-  cells.forEach(cell => {
-    cell.textContent = '';
-    cell.className = 'cell'; // Reset classes
-  });
-  running = true;
-}
