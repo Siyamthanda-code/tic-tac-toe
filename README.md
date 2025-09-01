@@ -27,14 +27,14 @@ Open the `index.html` file in any modern web browser to play the game.
 ## Installation
 
 1. Clone the repository or download the source code:
-'''bash
+```bash
 git clone https://github.com/yourusername/tic-tac-toe.git
-
+```
 2. Navigate to the project directory:
-'''bash
+```bash
 cd tic-tac-toe
-
-3. Open index.html in your preferred web browser.
+```
+4. Open index.html in your preferred web browser.
 
 ---
 
