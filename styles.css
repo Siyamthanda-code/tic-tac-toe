@@ -42,16 +42,6 @@ body {
   user-select: none;
 }
 
-/* Responsive adjustments for scoreboard */
-@media screen and (max-width: 400px) {
-  #scoreboard {
-    flex-direction: column;
-    gap: 8px;
-    font-size: 16px;
-  }
-}
-
-
 /* Title */
 #game-container h1 {
   font-size: 48px;
@@ -206,4 +196,13 @@ body {
 25% { transform: rotate(-3deg); }
 50% { transform: rotate(3deg); }
 75% { transform: rotate(-3deg); }
+}
+
+/* Responsive adjustments for scoreboard */
+@media screen and (max-width: 400px) {
+  #scoreboard {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+  }
 }
