@@ -28,7 +28,7 @@ let scoreDraw = 0;
 initializeGame();
 
 function initializeGame() {
-  cells.forEach((cell) => cell.addEventListener('click', cellClicked));
+  cells.forEach(cell => cell.addEventListener('click', cellClicked));
   resetButton.addEventListener('click', resetGame);
   statusText.textContent = `${currentPlayer}'s turn`;
   running = true;
@@ -66,7 +66,7 @@ function checkWinner() {
 
     if (cellA === cellB && cellB === cellC) {
       roundWon = true;
-      condition.forEach((index) => {
+      condition.forEach(index => {
         document.querySelector(`[cellIndex="${index}"]`).classList.add('winning-cell');
       });
       break;
@@ -101,7 +101,7 @@ function resetGame() {
   currentPlayer = 'X';
   options = ['', '', '', '', '', '', '', '', ''];
   statusText.textContent = `${currentPlayer}'s turn`;
-  cells.forEach((cell) => {
+  cells.forEach(cell => {
     cell.textContent = '';
     cell.className = 'cell'; // Reset classes
   });
