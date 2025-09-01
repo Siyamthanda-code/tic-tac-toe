@@ -27,6 +27,31 @@ body {
   max-width:400px;
 }
 
+/* Scoreboard */
+#scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+}
+
+#scoreboard p {
+  margin: 0 10px;
+  user-select: none;
+}
+
+/* Responsive adjustments for scoreboard */
+@media screen and (max-width: 400px) {
+  #scoreboard {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+  }
+}
+
+
 /* Title */
 #game-container h1 {
   font-size: 48px;
